@@ -10,9 +10,8 @@ export const thanos = async () => {
 
         for (let i = 0; i < count; i++) {
             const result = array.pop(Math.random(array) >= 0.5);
-            console.log(result);
+            return result;
           }
-
 
       } catch (err) {
         console.error('Помилка читання файлу:', err);
