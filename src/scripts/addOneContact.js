@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import { createFakeContact } from '../utils/createFakeContact.js';
 
 export const addOneContact = async () => {
-    const newContact = createFakeContact();
+  const newContact = createFakeContact();
   try {
     const data = await fs.readFile(PATH_DB, 'utf8');
     const contacts = JSON.parse(data);
